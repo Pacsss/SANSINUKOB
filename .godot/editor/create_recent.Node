@@ -1,5 +1,9 @@
+TouchScreenButton
+CanvasLayer
+Control
+CollisionShape2D
+Camera2D
 TileMap
 AnimatedSprite2D
-CollisionShape2D
 CharacterBody2D
 AnimationPlayer

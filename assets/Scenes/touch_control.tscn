@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5v617fmw41bm"]
+
+[ext_resource type="Texture2D" uid="uid://d37bxh1t82fcs" path="res://assets/sprites/left.png" id="1_mwg33"]
+[ext_resource type="Script" uid="uid://d1xwe0yvprrft" path="res://assets/Scripts/touch_control.gd" id="1_v0uy3"]
+[ext_resource type="Texture2D" uid="uid://dye2g77e4l701" path="res://assets/sprites/right.png" id="2_hy4f4"]
+[ext_resource type="Texture2D" uid="uid://v2l6uqwue3ou" path="res://assets/sprites/up.png" id="3_v0uy3"]
+
+[sub_resource type="GDScript" id="GDScript_hy4f4"]
+
+[node name="TouchControl" type="CanvasLayer"]
+script = ExtResource("1_v0uy3")
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(321, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("1_mwg33")
+action = "left"
+script = SubResource("GDScript_hy4f4")
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(432, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("2_hy4f4")
+action = "right"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2(857, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("3_v0uy3")
+action = "jump"
+
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="released" from="Left" to="." method="_on_left_released"]
+[connection signal="pressed" from="Right" to="." method="_on_right_pressed"]
+[connection signal="released" from="Right" to="." method="_on_right_released"]
+[connection signal="pressed" from="Jump" to="." method="_on_jump_pressed"]
+[connection signal="released" from="Jump" to="." method="_on_jump_released"]
