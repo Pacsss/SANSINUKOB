@@ -1,3 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758538336
-icon.svg::CompressedTexture2D::7300191563739147162::1758538314::1758538338::1::::<><><>0<>0<>f2900efee0efb86847352f1c7af23f88<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1758720762
+icon.svg::CompressedTexture2D::7300191563739147162::1758720156::1758720156::1::::<><><>0<>0<>f2900efee0efb86847352f1c7af23f88<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1758720156::0::1::::<><><>0<>0<><>::
+::res://assets/::1758720762
+::res://assets/Scenes/::1758720258
+::res://assets/Scripts/::1758720762
+character_body_2d.gd::GDScript::3165394920574730210::1758720627::0::1::::<>CharacterBody2D<><>0<>0<><>::
+screen.tscn::PackedScene::1304100514961026479::1758720757::0::1::::<><><>0<>0<><>::
+::res://assets/sprites/::1758720222
+astro_walking.png::CompressedTexture2D::4389767048072074888::1758720156::1758720222::1::::<><><>0<>0<>14d8daac05ecdde01ce4eeb210e23200<>res://.godot/imported/astro_walking.png-fb2f70c33ad27bacc6eb91fb6205d8c1.ctex::
+char_fem_walking.png::CompressedTexture2D::5062265816084120483::1758720156::1758720222::1::::<><><>0<>0<>3c5522a793c6b1526086f0c6905842eb<>res://.godot/imported/char_fem_walking.png-352da820063a35582b3fbe934b5709c7.ctex::
+char_male_walking.png::CompressedTexture2D::6591876063207369425::1758720156::1758720222::1::::<><><>0<>0<>6db0d5732c5b25497a134d4f3d1567e5<>res://.godot/imported/char_male_walking.png-c7009c4c240ea2ee19153592b6f67db4.ctex::
+rover.png::CompressedTexture2D::7226687722086854814::1758720156::1758720222::1::::<><><>0<>0<>1208e38ae603284da17e7c9793eb819c<>res://.godot/imported/rover.png-0a0b4c7a7db481e802b77080f5de55e9.ctex::
+tile_sheet.png::CompressedTexture2D::8408735027167515455::1758720156::1758720222::1::::<><><>0<>0<>ca5828956125489808758a20e3394444<>res://.godot/imported/tile_sheet.png-4372fdfb33f373e3ff60aba3b3d616b0.ctex::
