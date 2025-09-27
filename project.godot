@@ -17,9 +17,14 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+<<<<<<< HEAD
 GameManager="*res://assets/Scripts/systems/gameManager.gd"
 Survival="*res://assets/scripts/systems/survival.gd"
 GlobalTimer="*res://assets/scripts/systems/GameTimer.gd"
+=======
+GameManager="*res://Scripts/systems/GameManager.gd"
+Survival="*res://Scripts/systems/survival.gd"
+>>>>>>> 28789ccfbe46f5863227d5aad5a02b4c1e7977c6
 
 [display]
 

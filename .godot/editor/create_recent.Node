@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 Label
 MarginContainer
 Panel
 Timer
+=======
+LineEdit
+Button
+Label
+Control
+>>>>>>> 28789ccfbe46f5863227d5aad5a02b4c1e7977c6
 TileMap
 TileMapLayer
 Camera2D
 Node
 TouchScreenButton
 CanvasLayer
-Control
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
