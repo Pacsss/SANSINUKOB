@@ -20,8 +20,6 @@ config/icon="res://icon.svg"
 GameTimer="*res://scripts/systems/GameTimer.gd"
 Survival="*res://scripts/systems/survival.gd"
 GameManager="*res://scripts/systems/GameManager.gd"
-CharacterBody2d="*res://scripts/animations/character_body_2d.gd"
-TouchControl="*res://scripts/systems/touchControl.gd"
 
 [input]
 
