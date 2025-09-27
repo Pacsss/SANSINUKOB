@@ -6,7 +6,7 @@ extends Control
 @export var normal_speed = 2
 
 func _ready() -> void:
-	GlobalTimer.time_tick.connect(on_time_tick)
+	GameTimer.time_tick.connect(on_time_tick)
 
 func on_time_tick(sol: int, hour: int, minute: int, second: float) -> void:
 	sol_label.text = "Sol " + str(sol)

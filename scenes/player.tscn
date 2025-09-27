@@ -1,11 +1,8 @@
 [gd_scene load_steps=22 format=3 uid="uid://c7vc4u3wskn4l"]
 
-[ext_resource type="Script" uid="uid://bldlueg6x3cx3" path="res://assets/scripts/Animations/character_body_2d.gd" id="1_qrc4i"]
+[ext_resource type="Script" uid="uid://bldlueg6x3cx3" path="res://scripts/animations/character_body_2d.gd" id="1_qrc4i"]
 [ext_resource type="Texture2D" uid="uid://b3so27fc8qcsm" path="res://assets/sprites/astro_walking.png" id="2_0o5ai"]
 [ext_resource type="Texture2D" uid="uid://7b00j1j5vku7" path="res://assets/sprites/astro_idle.png" id="2_ay7pi"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0o5ai"]
-size = Vector2(17, 27)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qekam"]
 atlas = ExtResource("2_ay7pi")
@@ -132,16 +129,19 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0o5ai"]
+size = Vector2(17, 27)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_qrc4i")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
-shape = SubResource("RectangleShape2D_0o5ai")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_qekam")
-animation = &"walk"
-frame_progress = 0.91972077
+animation = &"idle"
+frame_progress = 0.30919367
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_0o5ai")

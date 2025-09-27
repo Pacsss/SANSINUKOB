@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bljopn1xgfq04"]
 
-[ext_resource type="Script" uid="uid://klebajjx1q10" path="res://assets/scenes/days.gd" id="1_3ypwe"]
+[ext_resource type="Script" uid="uid://klebajjx1q10" path="res://scripts/systems/days.gd" id="1_3ypwe"]
 [ext_resource type="FontFile" uid="uid://d3dlgk5v16pmg" path="res://assets/font/Retro Gaming.ttf" id="1_qbtf5"]
 
 [sub_resource type="Theme" id="Theme_e5h04"]
