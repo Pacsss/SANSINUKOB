@@ -103,7 +103,7 @@ tile_set = SubResource("TileSet_iqluw")
 position = Vector2(81, -30)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
