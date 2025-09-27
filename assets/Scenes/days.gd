@@ -1,0 +1,15 @@
+extends Control
+
+@onready var sol_label: Label = $DayPanel/MarginContainer/SolLabel
+@onready var time_label: Label = $TimePanel/MarginContainer/TimeLabel
+
+@export var normal_speed = 2
+
+func _ready() -> void:
+	GlobalTimer.time_tick.connect(on_time_tick)
+
+func on_time_tick(sol: int, hour: int, minute: int, second: float) -> void:
+	sol_label.text = "Sol " + str(sol)
+	time_label.text = "%02d:%02d:%02f" % [hour, minute, second]
+	
+	

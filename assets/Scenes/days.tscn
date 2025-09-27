@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://bljopn1xgfq04"]
+
+[ext_resource type="Script" uid="uid://klebajjx1q10" path="res://assets/scenes/days.gd" id="1_3ypwe"]
+[ext_resource type="FontFile" uid="uid://d3dlgk5v16pmg" path="res://assets/font/Retro Gaming.ttf" id="1_qbtf5"]
+
+[sub_resource type="Theme" id="Theme_e5h04"]
+
+[sub_resource type="Theme" id="Theme_qbtf5"]
+
+[sub_resource type="Theme" id="Theme_yvojy"]
+
+[node name="DayAndNight" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_e5h04")
+theme_type_variation = &"timerPanel"
+script = ExtResource("1_3ypwe")
+
+[node name="DayPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 29.0
+theme = SubResource("Theme_qbtf5")
+theme_type_variation = &"timerPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 28.0
+theme = SubResource("Theme_yvojy")
+theme_type_variation = &"timerPanel"
+
+[node name="SolLabel" type="Label" parent="DayPanel/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_qbtf5")
+text = "SOL 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimePanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 32.0
+offset_right = 101.0
+offset_bottom = 61.0
+theme = SubResource("Theme_qbtf5")
+theme_type_variation = &"timerPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 28.0
+theme = SubResource("Theme_yvojy")
+theme_type_variation = &"timerPanel"
+
+[node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_qbtf5")
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 1

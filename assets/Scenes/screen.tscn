@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://styly06aydb8"]
+[gd_scene load_steps=7 format=4 uid="uid://styly06aydb8"]
 
 [ext_resource type="Texture2D" uid="uid://dr2ivw2a8j76j" path="res://assets/sprites/tile_sheet.png" id="1_wgsgg"]
-[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://assets/Scenes/player.tscn" id="2_48lv4"]
-[ext_resource type="PackedScene" uid="uid://c5v617fmw41bm" path="res://assets/Scenes/touchControl.tscn" id="3_iqluw"]
+[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://assets/scenes/player.tscn" id="2_48lv4"]
+[ext_resource type="PackedScene" uid="uid://c5v617fmw41bm" path="res://assets/scenes/touchControl.tscn" id="3_iqluw"]
+[ext_resource type="PackedScene" uid="uid://bljopn1xgfq04" path="res://assets/scenes/days.tscn" id="4_fpjo6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48lv4"]
 texture = ExtResource("1_wgsgg")
@@ -106,11 +107,17 @@ zoom = Vector2(3, 3)
 process_callback = 0
 position_smoothing_enabled = true
 
-[node name="Control" type="Control" parent="."]
+[node name="UI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
-[node name="TouchControl" parent="Control" instance=ExtResource("3_iqluw")]
+[node name="TouchControl" parent="UI" instance=ExtResource("3_iqluw")]
+
+[node name="Timer" parent="." instance=ExtResource("4_fpjo6")]
+offset_left = 89.0
+offset_top = -132.0
+offset_right = 89.0
+offset_bottom = -132.0

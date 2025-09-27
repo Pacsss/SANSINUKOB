@@ -1,3 +1,7 @@
+Label
+MarginContainer
+Panel
+Timer
 TileMap
 TileMapLayer
 Camera2D
@@ -8,4 +12,3 @@ Control
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
-AnimationPlayer
