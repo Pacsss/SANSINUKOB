@@ -20,8 +20,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * SPEED
-		
+		animated_sprite_2d.play("walk")
+		animated_sprite_2d.flip_h = direction < 0
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		animated_sprite_2d.play("idle")
 
 	move_and_slide()

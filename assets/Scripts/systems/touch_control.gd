@@ -4,8 +4,6 @@ extends CanvasLayer
 @onready var jump: TouchScreenButton = $Jump
 @onready var left: TouchScreenButton = $Left
 
-
-
 func _on_left_pressed() -> void:
 	left.modulate.a = 0.5
 
