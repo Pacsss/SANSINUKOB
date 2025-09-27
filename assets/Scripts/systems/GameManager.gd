@@ -6,7 +6,7 @@ var current_state = GAME_STATE.MENU
 
 # Player data
 var player_role = null
-var player_data = {
+var player_data = {  
 	"health": 100.0,
 	"thirst": 100.0,
 	"hunger": 100.0,

@@ -1,10 +1,11 @@
+TileMap
+TileMapLayer
 Camera2D
 Node
 TouchScreenButton
 CanvasLayer
 Control
 CollisionShape2D
-TileMap
 AnimatedSprite2D
 CharacterBody2D
 AnimationPlayer

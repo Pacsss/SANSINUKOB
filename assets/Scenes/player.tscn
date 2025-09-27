@@ -100,7 +100,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -129,7 +129,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 7.0
+"speed": 10.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -143,5 +143,5 @@ shape = SubResource("RectangleShape2D_0o5ai")
 texture_filter = 1
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_qekam")
-animation = &"idle"
-frame_progress = 0.7292983
+animation = &"walk"
+frame_progress = 0.91972077
