@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://styly06aydb8"]
+[gd_scene load_steps=6 format=4 uid="uid://styly06aydb8"]
 
 [ext_resource type="Texture2D" uid="uid://dr2ivw2a8j76j" path="res://assets/sprites/tile_sheet.png" id="1_wgsgg"]
-[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/player.tscn" id="2_48lv4"]
-[ext_resource type="PackedScene" uid="uid://c5v617fmw41bm" path="res://scenes/touchControl.tscn" id="3_iqluw"]
-[ext_resource type="PackedScene" uid="uid://bljopn1xgfq04" path="res://scenes/days.tscn" id="4_fpjo6"]
+[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="2_48lv4"]
+[ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/ui.tscn" id="3_qc0hx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48lv4"]
 texture = ExtResource("1_wgsgg")
@@ -100,22 +99,14 @@ tile_map_data = PackedByteArray("AAD8////AAABAAEAAAD8/wAAAAAFAAIAAAD8/wEAAAAEAAQ
 tile_set = SubResource("TileSet_iqluw")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_48lv4")]
-position = Vector2(81, -30)
+position = Vector2(82, -31)
 
-[node name="Timer" parent="CharacterBody2D" instance=ExtResource("4_fpjo6")]
-offset_left = -227.0
-offset_top = -76.0
-offset_right = -227.0
-offset_bottom = -76.0
+[node name="UI" parent="CharacterBody2D" instance=ExtResource("3_qc0hx")]
+offset_left = 220.0
+offset_top = -62.0
+offset_right = 220.0
+offset_bottom = -62.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-zoom = Vector2(3, 3)
-
-[node name="UI" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
-
-[node name="TouchControl" parent="UI" instance=ExtResource("3_iqluw")]
+position = Vector2(-3, 8)
+zoom = Vector2(2, 2)

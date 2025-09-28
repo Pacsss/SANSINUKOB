@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759036276
+::res://::1759036753
 icon.svg::CompressedTexture2D::121210813707870714::1758968823::1758968834::1::::<><><>0<>0<>b5a19570be10a0ec95203b4c268de821<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1758973783
 ::res://assets/font/::1758973783
@@ -15,18 +15,21 @@ right.png::CompressedTexture2D::8853703613378354964::1758968924::1758968924::1::
 rover.png::CompressedTexture2D::7226687722086854814::1758968924::1758968924::1::::<><><>0<>0<>1208e38ae603284da17e7c9793eb819c<>res://.godot/imported/rover.png-0a0b4c7a7db481e802b77080f5de55e9.ctex::
 tile_sheet.png::CompressedTexture2D::8408735027167515455::1758968924::1758968924::1::::<><><>0<>0<>ca5828956125489808758a20e3394444<>res://.godot/imported/tile_sheet.png-4372fdfb33f373e3ff60aba3b3d616b0.ctex::
 up.png::CompressedTexture2D::1530428238500146560::1758968924::1758968924::1::::<><><>0<>0<>2e9242a21a2dabd7e8937c694da00240<>res://.godot/imported/up.png-ca8934a419649320edb630ee900ec0f3.ctex::
-::res://scenes/::1758995133
-days.tscn::PackedScene::3177954912327014551::1758994684::0::1::::<><><>0<>0<><>::uid://klebajjx1q10::::res://scripts/systems/days.gd<>uid://d3dlgk5v16pmg::::res://assets/font/Retro Gaming.ttf
+::res://scenes/::1759036771
 player.tscn::PackedScene::7062410613392837577::1758978346::0::1::::<><><>0<>0<><>::uid://bldlueg6x3cx3::::res://scripts/animations/character_body_2d.gd<>uid://b3so27fc8qcsm::::res://assets/sprites/astro_walking.png<>uid://7b00j1j5vku7::::res://assets/sprites/astro_idle.png<>uid://dg048kw2j4qs0::::res://assets/sprites/astro_jump.png
 rover.tscn::PackedScene::53002943347196520::1758994920::0::1::::<><><>0<>0<><>::uid://da7wqxsk2inus::::res://assets/sprites/rover.png
-screen.tscn::PackedScene::1304100514961026479::1758995133::0::1::::<><><>0<>0<><>::uid://dr2ivw2a8j76j::::res://assets/sprites/tile_sheet.png<>uid://c7vc4u3wskn4l::::res://scenes/player.tscn<>uid://c5v617fmw41bm::::res://scenes/touchControl.tscn<>uid://bljopn1xgfq04::::res://scenes/days.tscn
+screen.tscn::PackedScene::1304100514961026479::1759036777::0::1::::<><><>0<>0<><>::uid://dr2ivw2a8j76j::::res://assets/sprites/tile_sheet.png<>uid://c7vc4u3wskn4l::::res://scenes/player.tscn<>uid://c5v617fmw41bm::::res://scenes/UI/touchControl.tscn<>uid://bljopn1xgfq04::::res://scenes/UI/days.tscn
+::res://scenes/characters/::1759036771
+::res://scenes/UI/::1759036766
+days.tscn::PackedScene::3177954912327014551::1758994684::0::1::::<><><>0<>0<><>::uid://klebajjx1q10::::res://scripts/systems/days.gd<>uid://d3dlgk5v16pmg::::res://assets/font/Retro Gaming.ttf
 touchControl.tscn::PackedScene::6923788955826737694::1758971175::0::1::::<><><>0<>0<><>::uid://d37bxh1t82fcs::::res://assets/sprites/left.png<>uid://d1xwe0yvprrft::::res://scripts/systems/touchControl.gd<>uid://dye2g77e4l701::::res://assets/sprites/right.png<>uid://v2l6uqwue3ou::::res://assets/sprites/up.png
+ui.tscn::PackedScene::2119551114779730992::1759036688::0::1::::<><><>0<>0<><>::
 ::res://scripts/::1758973783
 ::res://scripts/animations/::1758978561
 character_body_2d.gd::GDScript::3165394920574730210::1758978561::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://scripts/systems/::1758994217
+::res://scripts/systems/::1759036432
 days.gd::GDScript::724841259783887725::1758994217::0::1::::<>Control<><>0<>0<><>::
 GameManager.gd::GDScript::4470279792582252428::1758969005::0::1::::<>Node<><>0<>0<><>::
-GameTimer.gd::GDScript::6125451535039915358::1758994148::0::1::::<>Node<><>0<>0<><>::
+GameTimer.gd::GDScript::6125451535039915358::1759036432::0::1::::<>Node<><>0<>0<><>::
 survival.gd::GDScript::4381986098599294725::1758969005::0::1::::<>Node<><>0<>0<><>::
 touchControl.gd::GDScript::9032996942161938329::1758969005::0::1::::<>CanvasLayer<><>0<>0<><>::

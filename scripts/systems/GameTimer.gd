@@ -4,7 +4,7 @@ const MINUTES_PER_SOL: int = 24 * 61
 const MINUTES_PER_HOUR: int = 61 
 const GAME_MINUTE_DURATION: float = TAU / MINUTES_PER_SOL
 
-var game_speed: float = 0.001  # Increased default to 1.0 for more visible movement; adjust as needed
+var game_speed: float = 0.0018  # Increased default to 1.0 for more visible movement; adjust as needed
 
 var initial_sol: int = 0
 var initial_hour: int = 7
