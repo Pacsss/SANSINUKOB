@@ -102,6 +102,12 @@ tile_set = SubResource("TileSet_iqluw")
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_48lv4")]
 position = Vector2(81, -30)
 
+[node name="Timer" parent="CharacterBody2D" instance=ExtResource("4_fpjo6")]
+offset_left = -227.0
+offset_top = -76.0
+offset_right = -227.0
+offset_bottom = -76.0
+
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(3, 3)
 
@@ -113,9 +119,3 @@ offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
 [node name="TouchControl" parent="UI" instance=ExtResource("3_iqluw")]
-
-[node name="Timer" parent="." instance=ExtResource("4_fpjo6")]
-offset_left = 89.0
-offset_top = -132.0
-offset_right = 89.0
-offset_bottom = -132.0

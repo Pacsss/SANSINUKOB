@@ -8,8 +8,9 @@ var game_speed: float = 0.001  # Increased default to 1.0 for more visible movem
 
 var initial_sol: int = 0
 var initial_hour: int = 7
-var initial_minute: int = 0  # Fixed: Was 00, but int literals don't need leading zero
+var initial_minute: int = 0
 var time: float = 0.0 
+
 var current_minute: int = -1
 var current_sol: int = 0 
 

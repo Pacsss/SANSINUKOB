@@ -14,6 +14,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -9.0
+offset_right = -9.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_e5h04")
@@ -22,44 +24,50 @@ script = ExtResource("1_3ypwe")
 
 [node name="DayPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 100.0
-offset_bottom = 29.0
+offset_left = 10.0
+offset_top = 2.0
+offset_right = 110.0
+offset_bottom = 14.0
 theme = SubResource("Theme_qbtf5")
 theme_type_variation = &"timerPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
 layout_mode = 0
-offset_right = 100.0
-offset_bottom = 28.0
+offset_left = -1.0
+offset_right = 97.0
+offset_bottom = 12.0
 theme = SubResource("Theme_yvojy")
 theme_type_variation = &"timerPanel"
 
 [node name="SolLabel" type="Label" parent="DayPanel/MarginContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_qbtf5")
-text = "SOL 1"
+theme_override_font_sizes/font_size = 9
+text = "SOL 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TimePanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 32.0
-offset_right = 101.0
-offset_bottom = 61.0
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 110.0
+offset_bottom = 27.0
 theme = SubResource("Theme_qbtf5")
 theme_type_variation = &"timerPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
 layout_mode = 0
-offset_right = 100.0
-offset_bottom = 28.0
+offset_left = -1.0
+offset_right = 99.0
+offset_bottom = 12.0
 theme = SubResource("Theme_yvojy")
 theme_type_variation = &"timerPanel"
 
 [node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_qbtf5")
-text = "00:00"
+theme_override_font_sizes/font_size = 9
+text = "07:00"
 horizontal_alignment = 1
 vertical_alignment = 1
