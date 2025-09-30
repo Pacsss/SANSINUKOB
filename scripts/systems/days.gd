@@ -12,4 +12,3 @@ func on_time_tick(sol: int, hour: int, minute: int) -> void:
 	sol_label.text = "Sol " + str(sol)
 	time_label.text = "%02d:%02d" % [hour, minute]
 	
-	

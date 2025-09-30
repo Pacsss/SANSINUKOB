@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwrin8256gvd2"]
+
+[ext_resource type="Script" uid="uid://ch4rewaokx5sb" path="res://scripts/systems/environment.gd" id="1_slygh"]
+
+[node name="Environment" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_slygh")
+
+[node name="AirTemperature" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="AirTemperature"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Air" type="Label" parent="AirTemperature/MarginContainer"]
+layout_mode = 2

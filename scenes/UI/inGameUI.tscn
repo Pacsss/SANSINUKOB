@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://5gyxx7mjdyua"]
+[gd_scene load_steps=4 format=3 uid="uid://5gyxx7mjdyua"]
 
 [ext_resource type="PackedScene" uid="uid://bljopn1xgfq04" path="res://scenes/UI/days.tscn" id="1_yb1mt"]
 [ext_resource type="PackedScene" uid="uid://c5v617fmw41bm" path="res://scenes/UI/touchControl.tscn" id="2_41gti"]
+[ext_resource type="PackedScene" uid="uid://be68e1lxm0wxi" path="res://scenes/UI/menus.tscn" id="3_41gti"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -13,9 +14,16 @@ grow_vertical = 2
 
 [node name="DayAndNight" parent="." instance=ExtResource("1_yb1mt")]
 layout_mode = 1
-offset_left = -16.0
-offset_top = 289.0
-offset_right = -1050.0
-offset_bottom = -329.0
+offset_left = -23.0
+offset_top = 257.0
+offset_right = -1027.0
+offset_bottom = -366.0
 
 [node name="TouchControl" parent="." instance=ExtResource("2_41gti")]
+
+[node name="settings" parent="." instance=ExtResource("3_41gti")]
+layout_mode = 1
+offset_left = 53.0
+offset_top = 219.0
+offset_right = -1065.0
+offset_bottom = -393.0

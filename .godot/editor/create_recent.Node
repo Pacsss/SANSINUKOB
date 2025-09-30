@@ -1,3 +1,8 @@
+Panel
+TouchScreenButton
+Label
+MarginContainer
+Container
 Camera2D
 AnimatedSprite2D
 AnimationTree

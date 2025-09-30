@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 	# Reverted close to original, but scaled by game_speed for control
 	# This advances ~1 real second worth of game time per real second when game_speed=1.0
 	time += delta * game_speed + game_speed * GAME_MINUTE_DURATION
-	print("Time advanced by: ", delta * game_speed + game_speed * GAME_MINUTE_DURATION)  # Optional debug
+	# print("Time advanced by: ", delta * game_speed + game_speed * GAME_MINUTE_DURATION)  # Optional debug
 	
 	game_time.emit()
 	
@@ -36,7 +36,7 @@ func set_initial_time() -> void:
 	var initial_total_minutes = initial_sol * MINUTES_PER_SOL + (initial_hour * MINUTES_PER_HOUR) + initial_minute
 	
 	time = initial_total_minutes * GAME_MINUTE_DURATION
-	print("Initial time set to: ", time)  # Optional debug
+	# print("Initial time set to: ", time)  # Optional debug
 
 func recalculate_time() -> void:
 	var total_minutes: int = int(time / GAME_MINUTE_DURATION)
@@ -48,9 +48,9 @@ func recalculate_time() -> void:
 	if current_minute != minute: 
 		current_minute = minute
 		time_tick.emit(sol, hour, minute)
-		print("Tick: Sol=", sol, " Hour=", hour, " Minute=", minute)  # l debug—remove after testingOptiona
+		# print("Tick: Sol=", sol, " Hour=", hour, " Minute=", minute)  # l debug—remove after testingOptiona
 	
 	if current_sol != sol:
 		current_sol = sol
 		time_tick_sol.emit(sol)
-		print("Sol changed to: ", sol)  # Optional debug
+		# print("Sol changed to: ", sol)  # Optional debug
