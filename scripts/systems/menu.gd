@@ -11,7 +11,6 @@ func _on_helmet_pressed() -> void:
 	helmet.modulate.a = 0.5
 	canvas_layer.visible = not canvas_layer.visible
 
-	
 func _on_helmet_released() -> void:
 	helmet.modulate.a = 1.0
 
