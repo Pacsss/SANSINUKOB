@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://oaljilukwhtg"]
+
+[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="1_14qbo"]
+[ext_resource type="Texture2D" uid="uid://cbxi3kk6vgffq" path="res://assets/sprites/facilities/laboratory/Laboratory_Background.png" id="1_dy64v"]
+[ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="2_e6vtr"]
+[ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="3_e6vtr"]
+
+[node name="Laboratory" type="Node2D"]
+
+[node name="LaboratoryBackground" type="Sprite2D" parent="."]
+position = Vector2(5, 76)
+texture = ExtResource("1_dy64v")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_14qbo")]
+position = Vector2(0, 207)
+
+[node name="UI" parent="CharacterBody2D" instance=ExtResource("2_e6vtr")]
+offset_left = 220.0
+offset_top = -62.0
+offset_right = 220.0
+offset_bottom = -62.0
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-3, 8)
+offset = Vector2(0, -140)
+zoom = Vector2(2, 2)
+
+[node name="Tiles" parent="." instance=ExtResource("3_e6vtr")]
+position = Vector2(-493, -202)

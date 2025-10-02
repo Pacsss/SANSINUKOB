@@ -29,7 +29,7 @@ func _ready() -> void:
 
 # Computation for Environmental Status
 # y = (x1c1 + x2c2) * b 
-
+	
 # Computation for Environmental Status
 func environment(sol: int, hour: int, minute: int) -> void:
 	var time_sin = sin(2 * (3.14 * (hour * 3600 + minute * 60 ) / mars_sol_sec))

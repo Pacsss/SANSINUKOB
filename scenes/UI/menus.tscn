@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://be68e1lxm0wxi"]
+[gd_scene load_steps=5 format=3 uid="uid://be68e1lxm0wxi"]
 
-[ext_resource type="Texture2D" uid="uid://bfxjsx3q33fft" path="res://assets/sprites/Helmet_Blue.png" id="1_t8pki"]
+[ext_resource type="Texture2D" uid="uid://bfxjsx3q33fft" path="res://assets/sprites/UI/Helmet_Blue.png" id="1_t8pki"]
 [ext_resource type="Script" uid="uid://bbuq70ttldxhl" path="res://scripts/systems/menu.gd" id="2_2un8v"]
-[ext_resource type="Texture2D" uid="uid://cpiy0c1n0og4q" path="res://assets/sprites/folder.png" id="2_32w1k"]
+[ext_resource type="Texture2D" uid="uid://cpiy0c1n0og4q" path="res://assets/sprites/UI/folder.png" id="2_32w1k"]
+[ext_resource type="Texture2D" uid="uid://bl4tq4e352xxx" path="res://assets/sprites/UI/book_.png" id="4_6k4wi"]
 
 [node name="menus" type="Control"]
 layout_mode = 3
@@ -44,3 +45,8 @@ layout_mode = 0
 offset_left = 82.00001
 offset_right = 116.00001
 offset_bottom = 35.0
+
+[node name="Book" type="Sprite2D" parent="."]
+position = Vector2(98.99999, 18)
+scale = Vector2(0.875, 0.875)
+texture = ExtResource("4_6k4wi")

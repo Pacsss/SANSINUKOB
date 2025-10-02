@@ -1,4 +1,7 @@
 Panel
+CollisionShape2D
+TileMapLayer
+TileMap
 TouchScreenButton
 Label
 MarginContainer

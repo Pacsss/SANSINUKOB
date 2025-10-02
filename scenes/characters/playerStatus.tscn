@@ -1,26 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjlob7o0w8niv"]
+[gd_scene load_steps=6 format=3 uid="uid://bjlob7o0w8niv"]
 
-[ext_resource type="Texture2D" uid="uid://c3ju5s8nvlimq" path="res://assets/sprites/health.png" id="1_dguob"]
-[ext_resource type="Texture2D" uid="uid://ksisv4ackd3u" path="res://assets/sprites/hunger.png" id="2_1m7gk"]
-[ext_resource type="Texture2D" uid="uid://dk7g3i2lob176" path="res://assets/sprites/thirst.png" id="3_ntac7"]
+[ext_resource type="Texture2D" uid="uid://c3ju5s8nvlimq" path="res://assets/sprites/UI/health.png" id="1_dguob"]
+[ext_resource type="Texture2D" uid="uid://ksisv4ackd3u" path="res://assets/sprites/UI/hunger.png" id="2_1m7gk"]
+[ext_resource type="Texture2D" uid="uid://dk7g3i2lob176" path="res://assets/sprites/UI/thirst.png" id="3_ntac7"]
+[ext_resource type="Texture2D" uid="uid://dsedssodvhos7" path="res://assets/sprites/UI/image.png" id="4_1m7gk"]
+[ext_resource type="Texture2D" uid="uid://rtxb8xw1awvp" path="res://assets/sprites/UI/o2.png" id="5_ntac7"]
 
 [node name="Status" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 494.0
-offset_top = 140.0
-offset_right = -526.0
-offset_bottom = -327.0
+offset_left = 474.0
+offset_top = 149.0
+offset_right = -506.0
+offset_bottom = -318.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="healthStatus" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 65.0
+offset_left = 105.0
 offset_top = 46.0
-offset_right = 92.0
+offset_right = 132.0
 offset_bottom = 73.0
 
 [node name="Health" type="Sprite2D" parent="healthStatus"]
@@ -30,9 +32,9 @@ texture = ExtResource("1_dguob")
 
 [node name="hungerStatus" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 65.0
+offset_left = 105.0
 offset_top = 75.0
-offset_right = 92.0
+offset_right = 132.0
 offset_bottom = 102.0
 
 [node name="Hunger" type="Sprite2D" parent="hungerStatus"]
@@ -42,12 +44,36 @@ texture = ExtResource("2_1m7gk")
 
 [node name="thirstStatus" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 65.0
+offset_left = 105.0
 offset_top = 104.0
-offset_right = 92.0
+offset_right = 132.0
 offset_bottom = 131.0
 
 [node name="Thirst" type="Sprite2D" parent="thirstStatus"]
 position = Vector2(14.708008, 13.799988)
 scale = Vector2(0.384125, 0.35)
 texture = ExtResource("3_ntac7")
+
+[node name="staminaStatus" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 46.0
+offset_right = 103.0
+offset_bottom = 73.0
+
+[node name="Stamina" type="Sprite2D" parent="staminaStatus"]
+position = Vector2(13.625, 14.125)
+scale = Vector2(0.2884612, 0.34230775)
+texture = ExtResource("4_1m7gk")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 46.0
+offset_right = 74.0
+offset_bottom = 73.0
+
+[node name="O2" type="Sprite2D" parent="Panel"]
+position = Vector2(13.499994, 13.25)
+scale = Vector2(0.32812536, 0.32031268)
+texture = ExtResource("5_ntac7")

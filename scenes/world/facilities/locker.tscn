@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c73qwsh5rvhdb"]
+
+[ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="1_7ucne"]
+[ext_resource type="Texture2D" uid="uid://btawr2n3urbi0" path="res://assets/sprites/facilities/locker/Locker_Background.png" id="1_fnhfb"]
+[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="2_yjnmk"]
+[ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="4_gvah2"]
+
+[node name="Locker" type="Node2D"]
+
+[node name="LockerBackground" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("1_fnhfb")
+
+[node name="Tiles" parent="." instance=ExtResource("1_7ucne")]
+position = Vector2(-45, -3)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_yjnmk")]
+position = Vector2(572, 399)
+
+[node name="UI" parent="CharacterBody2D" instance=ExtResource("4_gvah2")]
+offset_left = 220.0
+offset_top = -62.0
+offset_right = 220.0
+offset_bottom = -62.0
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-3, 8)
+offset = Vector2(0, -140)
+zoom = Vector2(2, 2)

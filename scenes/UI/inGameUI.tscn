@@ -18,22 +18,22 @@ grow_vertical = 2
 [node name="DayAndNight" parent="." instance=ExtResource("1_yb1mt")]
 layout_mode = 1
 offset_left = -21.0
-offset_top = 178.0
+offset_top = 117.0
 offset_right = -1025.0
-offset_bottom = -445.0
+offset_bottom = -506.0
 
 [node name="TouchControl" parent="." instance=ExtResource("2_41gti")]
 
 [node name="settings" parent="." instance=ExtResource("3_41gti")]
 layout_mode = 1
 offset_left = 12.0
-offset_top = 140.0
+offset_top = 79.0
 offset_right = -1022.0
-offset_bottom = -472.0
+offset_bottom = -533.0
 
 [node name="Status" parent="." instance=ExtResource("4_4ilxs")]
 layout_mode = 1
-offset_left = 491.0
-offset_top = 27.0
-offset_right = -553.0
-offset_bottom = -455.0
+offset_left = 429.0
+offset_top = -34.0
+offset_right = -570.0
+offset_bottom = -516.0
