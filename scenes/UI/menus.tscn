@@ -54,10 +54,9 @@ position = Vector2(1.9999924, 2)
 scale = Vector2(0.96875, 0.96875)
 texture_normal = ExtResource("4_6k4wi")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
+[node name="helmetcanvas" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="helmetcanvas"]
 modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
 offset_left = 368.0
 offset_top = 130.0
@@ -65,17 +64,77 @@ offset_right = 716.0
 offset_bottom = 410.0
 color = Color(0.30323282, 0.30323282, 0.30323282, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="helmetcanvas/ColorRect"]
+layout_mode = 0
+offset_right = 348.0
+offset_bottom = 280.0
+
+[node name="ewan" type="Label" parent="helmetcanvas/ColorRect/VBoxContainer"]
+modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
+layout_mode = 2
+text = "ewan ko pacs ikaw na
+"
+
+[node name="Close" type="Button" parent="helmetcanvas/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
+
+[node name="foldercanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="foldercanvas"]
+modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+color = Color(0.30323282, 0.30323282, 0.30323282, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="foldercanvas"]
 offset_left = 368.0
 offset_top = 130.0
 offset_right = 716.0
 offset_bottom = 410.0
 
-[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+[node name="Label" type="Label" parent="foldercanvas/VBoxContainer"]
 modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
 layout_mode = 2
 text = "ewan ko pacs ikaw na
 "
+
+[node name="Close" type="Button" parent="foldercanvas/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
+
+[node name="bookcanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="bookcanvas"]
+modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+color = Color(0.30323282, 0.30323282, 0.30323282, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="bookcanvas"]
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+
+[node name="Label" type="Label" parent="bookcanvas/VBoxContainer"]
+modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
+layout_mode = 2
+text = "ewan ko pacs ikaw na
+"
+
+[node name="Close" type="Button" parent="bookcanvas/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
 
 [connection signal="pressed" from="helmet/helmet" to="." method="_on_helmet_pressed"]
 [connection signal="released" from="helmet/helmet" to="." method="_on_helmet_released"]
@@ -83,4 +142,7 @@ text = "ewan ko pacs ikaw na
 [connection signal="released" from="folder/folder" to="." method="_on_folder_released"]
 [connection signal="pressed" from="book/book" to="." method="_on_book_pressed"]
 [connection signal="released" from="book/book" to="." method="_on_book_released"]
-[connection signal="visibility_changed" from="CanvasLayer" to="." method="_on_canvas_layer_visibility_changed"]
+[connection signal="visibility_changed" from="helmetcanvas" to="." method="_on_canvas_layer_visibility_changed"]
+[connection signal="pressed" from="helmetcanvas/ColorRect/VBoxContainer/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="foldercanvas/VBoxContainer/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="bookcanvas/VBoxContainer/Close" to="." method="_on_close_pressed"]

@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759412729
+::res://::1759415450
 icon.svg::CompressedTexture2D::121210813707870714::1758720156::1758973753::1::::<><><>0<>0<>b5a19570be10a0ec95203b4c268de821<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1759412703
 ::res://assets/font/::1758947759
@@ -75,10 +75,11 @@ screen.tscn::PackedScene::1304100514961026479::1759412703::0::1::::<><><>0<>0<><
 player.tscn::PackedScene::7062410613392837577::1759412703::0::1::::<><><>0<>0<><>::uid://bldlueg6x3cx3::::res://scripts/animations/character_body_2d.gd<>uid://b3so27fc8qcsm::::res://assets/sprites/astro_walking.png<>uid://7b00j1j5vku7::::res://assets/sprites/astro_idle.png<>uid://dg048kw2j4qs0::::res://assets/sprites/astro_jump.png
 playerStatus.tscn::PackedScene::3041681958963749217::1759412703::0::1::::<><><>0<>0<><>::uid://c3ju5s8nvlimq::::res://assets/sprites/UI/health.png<>uid://ksisv4ackd3u::::res://assets/sprites/UI/hunger.png<>uid://dk7g3i2lob176::::res://assets/sprites/UI/thirst.png<>uid://dsedssodvhos7::::res://assets/sprites/UI/image.png<>uid://rtxb8xw1awvp::::res://assets/sprites/UI/o2.png
 rover.tscn::PackedScene::53002943347196520::1759412703::0::1::::<><><>0<>0<><>::uid://da7wqxsk2inus::::res://assets/sprites/rover.png
-::res://scenes/UI/::1759412703
+::res://scenes/UI/::1759414882
 days.tscn::PackedScene::3177954912327014551::1759233218::0::1::::<><><>0<>0<><>::uid://klebajjx1q10::::res://scripts/systems/days.gd<>uid://d3dlgk5v16pmg::::res://assets/font/Retro Gaming.ttf
+helmet.gd::GDScript::2798782187078409709::1759412917::0::1::::<>TouchScreenButton<><>0<>0<><>::
 inGameUI.tscn::PackedScene::2119551114779730992::1759412703::0::1::::<><><>0<>0<><>::uid://bljopn1xgfq04::::res://scenes/UI/days.tscn<>uid://c5v617fmw41bm::::res://scenes/UI/touchControl.tscn<>uid://be68e1lxm0wxi::::res://scenes/UI/menus.tscn<>uid://bjlob7o0w8niv::::res://scenes/characters/playerStatus.tscn
-menus.tscn::PackedScene::2733183956220008470::1759412703::0::1::::<><><>0<>0<><>::uid://bfxjsx3q33fft::::res://assets/sprites/UI/Helmet_Blue.png<>uid://bbuq70ttldxhl::::res://scripts/systems/menu.gd<>uid://cpiy0c1n0og4q::::res://assets/sprites/UI/folder.png<>uid://bl4tq4e352xxx::::res://assets/sprites/UI/book_.png
+menus.tscn::PackedScene::2733183956220008470::1759414882::0::1::::<><><>0<>0<><>::uid://bfxjsx3q33fft::::res://assets/sprites/UI/Helmet_Blue.png<>uid://bbuq70ttldxhl::::res://scripts/systems/menu.gd<>uid://cpiy0c1n0og4q::::res://assets/sprites/UI/folder.png<>uid://bl4tq4e352xxx::::res://assets/sprites/UI/book_.png
 touchControl.tscn::PackedScene::6923788955826737694::1759412703::0::1::::<><><>0<>0<><>::uid://d37bxh1t82fcs::::res://assets/sprites/UI/left.png<>uid://d1xwe0yvprrft::::res://scripts/systems/touchControl.gd<>uid://dye2g77e4l701::::res://assets/sprites/UI/right.png<>uid://v2l6uqwue3ou::::res://assets/sprites/UI/up.png
 ::res://scenes/UI/menu/::1759412703
 environment.tscn::PackedScene::6352601076889849461::1759412703::0::1::::<><><>0<>0<><>::uid://ch4rewaokx5sb::::res://scripts/systems/environment.gd
@@ -91,9 +92,9 @@ locker.tscn::PackedScene::7077698657887630779::1759412703::0::1::::<><><>0<>0<><
 ::res://scripts/::1759152883
 ::res://scripts/animations/::1759233208
 character_body_2d.gd::GDScript::3165394920574730210::1759155675::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://scripts/systems/::1759412703
+::res://scripts/systems/::1759415062
 days.gd::GDScript::724841259783887725::1759233218::0::1::::<>Control<><>0<>0<><>::
 environment.gd::GDScript::5325070715936913525::1759412703::0::1::::<>Node<><>0<>0<><>::
 GameTimer.gd::GDScript::6125451535039915358::1759233218::0::1::::<>Node<><>0<>0<><>::
-menu.gd::GDScript::2498927043014704061::1759233218::0::1::::<>Control<><>0<>0<><>::
+menu.gd::GDScript::2498927043014704061::1759415062::0::1::::<>Control<><>0<>0<><>::
 touchControl.gd::GDScript::9032996942161938329::1758975015::0::1::::<>CanvasLayer<><>0<>0<><>::
