@@ -199,11 +199,12 @@ script = ExtResource("1_qrc4i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-1, 0)
+position = Vector2(-2, -19)
+scale = Vector2(1.1875, 1.25)
 sprite_frames = SubResource("SpriteFrames_qekam")
 animation = &"jump"
 frame_progress = 0.81941736
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+position = Vector2(-1, -16)
 shape = SubResource("RectangleShape2D_0o5ai")
