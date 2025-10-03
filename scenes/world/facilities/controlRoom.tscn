@@ -26,5 +26,5 @@ offset_bottom = -62.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-3, 8)
-offset = Vector2(0, -140)
+offset = Vector2(0, -120)
 zoom = Vector2(2, 2)

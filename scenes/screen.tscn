@@ -8,6 +8,7 @@
 position = Vector2(-82, 19)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_48lv4")]
+top_level = true
 position = Vector2(82, 185)
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("3_qc0hx")]
@@ -18,7 +19,7 @@ offset_bottom = -62.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-3, 8)
-offset = Vector2(0, -145)
+offset = Vector2(0, -120)
 zoom = Vector2(2, 2)
 
 [node name="Tiles" parent="." instance=ExtResource("3_nexl8")]
