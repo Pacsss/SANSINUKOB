@@ -10,10 +10,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 11.0
-offset_top = 3.0
-offset_right = 11.0
-offset_bottom = 3.0
+offset_left = 13.0
+offset_top = 2.0
+offset_right = 13.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_2un8v")
@@ -24,6 +24,7 @@ offset_right = 34.0
 offset_bottom = 35.0
 
 [node name="helmet" type="TouchScreenButton" parent="helmet"]
+texture_filter = 1
 position = Vector2(2.0000002, 3.0000005)
 scale = Vector2(0.9090909, 0.875)
 texture_normal = ExtResource("1_t8pki")
@@ -36,6 +37,7 @@ offset_right = 75.0
 offset_bottom = 35.0
 
 [node name="folder" type="TouchScreenButton" parent="folder"]
+texture_filter = 1
 position = Vector2(3, 3)
 scale = Vector2(0.9062501, 0.90625)
 texture_normal = ExtResource("2_32w1k")
@@ -46,7 +48,102 @@ offset_left = 82.00001
 offset_right = 116.00001
 offset_bottom = 35.0
 
-[node name="Book" type="Sprite2D" parent="."]
-position = Vector2(98.99999, 18)
-scale = Vector2(0.875, 0.875)
-texture = ExtResource("4_6k4wi")
+[node name="book" type="TouchScreenButton" parent="book"]
+texture_filter = 1
+position = Vector2(1.9999924, 2)
+scale = Vector2(0.96875, 0.96875)
+texture_normal = ExtResource("4_6k4wi")
+
+[node name="helmetcanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="helmetcanvas"]
+modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+color = Color(0.30323282, 0.30323282, 0.30323282, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="helmetcanvas/ColorRect"]
+layout_mode = 0
+offset_right = 348.0
+offset_bottom = 280.0
+
+[node name="ewan" type="Label" parent="helmetcanvas/ColorRect/VBoxContainer"]
+modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
+layout_mode = 2
+text = "ewan ko pacs ikaw na
+"
+
+[node name="Close" type="Button" parent="helmetcanvas/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
+
+[node name="foldercanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="foldercanvas"]
+modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+color = Color(0.30323282, 0.30323282, 0.30323282, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="foldercanvas"]
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+
+[node name="Label" type="Label" parent="foldercanvas/VBoxContainer"]
+modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
+layout_mode = 2
+text = "ewan ko pacs ikaw na
+"
+
+[node name="Close" type="Button" parent="foldercanvas/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
+
+[node name="bookcanvas" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="bookcanvas"]
+modulate = Color(0.62704444, 0.63102776, 0.6695691, 1)
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+color = Color(0.30323282, 0.30323282, 0.30323282, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="bookcanvas"]
+offset_left = 368.0
+offset_top = 130.0
+offset_right = 716.0
+offset_bottom = 410.0
+
+[node name="Label" type="Label" parent="bookcanvas/VBoxContainer"]
+modulate = Color(0.63123447, 0.30812654, 0.13764873, 1)
+layout_mode = 2
+text = "ewan ko pacs ikaw na
+"
+
+[node name="Close" type="Button" parent="bookcanvas/VBoxContainer"]
+layout_mode = 2
+text = "close idk"
+alignment = 0
+
+[connection signal="pressed" from="helmet/helmet" to="." method="_on_helmet_pressed"]
+[connection signal="released" from="helmet/helmet" to="." method="_on_helmet_released"]
+[connection signal="pressed" from="folder/folder" to="." method="_on_folder_pressed"]
+[connection signal="released" from="folder/folder" to="." method="_on_folder_released"]
+[connection signal="pressed" from="book/book" to="." method="_on_book_pressed"]
+[connection signal="released" from="book/book" to="." method="_on_book_released"]
+[connection signal="visibility_changed" from="helmetcanvas" to="." method="_on_canvas_layer_visibility_changed"]
+[connection signal="pressed" from="helmetcanvas/ColorRect/VBoxContainer/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="foldercanvas/VBoxContainer/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="bookcanvas/VBoxContainer/Close" to="." method="_on_close_pressed"]
