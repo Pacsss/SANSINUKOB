@@ -34,6 +34,6 @@ offset_bottom = -533.0
 [node name="Status" parent="." instance=ExtResource("4_4ilxs")]
 layout_mode = 1
 offset_left = 429.0
-offset_top = -34.0
+offset_top = -39.0
 offset_right = -570.0
-offset_bottom = -516.0
+offset_bottom = -521.0

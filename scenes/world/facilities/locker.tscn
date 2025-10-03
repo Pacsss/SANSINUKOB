@@ -16,6 +16,7 @@ position = Vector2(-45, -3)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_yjnmk")]
 position = Vector2(572, 399)
+metadata/_edit_lock_ = true
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("4_gvah2")]
 offset_left = 220.0
