@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvujrnif3grfo"]
+[gd_scene load_steps=11 format=3 uid="uid://bvujrnif3grfo"]
 
 [ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="1_6balg"]
 [ext_resource type="Texture2D" uid="uid://dyhm7m8uvfijy" path="res://assets/sprites/facilities/cRoom/Command_Control.png" id="2_xnjhy"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://u7mskg2jyox8" path="res://assets/sprites/facilities/cRoom/interactables/highlights/Control_Room_Logs_Highlight.png" id="4_ifljn"]
 [ext_resource type="Texture2D" uid="uid://oq7eqsoatjld" path="res://assets/sprites/facilities/cRoom/interactables/highlights/Drawer_Highlight.png" id="5_ghncw"]
 [ext_resource type="Texture2D" uid="uid://chdj7y0805jag" path="res://assets/sprites/facilities/cRoom/interactables/Control_Room_Logs.png" id="6_nkcme"]
+[ext_resource type="Texture2D" uid="uid://b8ja08k7ongw5" path="res://assets/sprites/facilities/cRoom/interactables/Door.png" id="9_ghncw"]
+[ext_resource type="Texture2D" uid="uid://d2m2hmo44dkes" path="res://assets/sprites/facilities/laboratory/Door_Closed_Highlights_Right.png" id="10_nkcme"]
 
 [node name="cRoom" type="Node2D"]
 
@@ -17,6 +19,10 @@ position = Vector2(-45, -3)
 [node name="CommandControl" type="Sprite2D" parent="."]
 position = Vector2(524, 278)
 texture = ExtResource("2_xnjhy")
+
+[node name="Door" type="Sprite2D" parent="CommandControl"]
+position = Vector2(0, 2)
+texture = ExtResource("9_ghncw")
 
 [node name="Drawer" type="Sprite2D" parent="CommandControl"]
 position = Vector2(-1, 0)
@@ -34,7 +40,13 @@ texture = ExtResource("5_ghncw")
 position = Vector2(-3, 0)
 texture = ExtResource("6_nkcme")
 
+[node name="DoorClosedHighlightsRight" type="Sprite2D" parent="CommandControl"]
+position = Vector2(-3.999939, 0)
+scale = Vector2(1.0171875, 1.0210526)
+texture = ExtResource("10_nkcme")
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_tcwyy")]
+visible = false
 position = Vector2(527, 406)
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("4_akb0k")]
@@ -45,5 +57,5 @@ offset_bottom = -62.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-3, 8)
-offset = Vector2(0, -140)
+offset = Vector2(0, -120)
 zoom = Vector2(2, 2)

@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://oaljilukwhtg"]
+[gd_scene load_steps=7 format=3 uid="uid://oaljilukwhtg"]
 
 [ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="1_14qbo"]
 [ext_resource type="Texture2D" uid="uid://cbxi3kk6vgffq" path="res://assets/sprites/facilities/laboratory/Laboratory_Background.png" id="1_dy64v"]
 [ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="2_e6vtr"]
 [ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="3_e6vtr"]
+[ext_resource type="Texture2D" uid="uid://dsapdu0iduurc" path="res://assets/sprites/facilities/laboratory/interactables/Door.png" id="5_5dtl4"]
+[ext_resource type="Texture2D" uid="uid://cqw0m0rjfuf54" path="res://assets/sprites/facilities/laboratory/interactables/highlights/Door_Closed_Highlights_Left.png" id="6_q6okc"]
 
 [node name="Laboratory" type="Node2D"]
 
@@ -11,11 +13,7 @@
 position = Vector2(5, 76)
 texture = ExtResource("1_dy64v")
 
-[node name="Tiles" parent="." instance=ExtResource("3_e6vtr")]
-position = Vector2(-493, -202)
-
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_14qbo")]
-visible = false
 position = Vector2(0, 207)
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("2_e6vtr")]
@@ -28,3 +26,14 @@ offset_bottom = -62.0
 position = Vector2(-3, 8)
 offset = Vector2(0, -140)
 zoom = Vector2(2, 2)
+
+[node name="Tiles" parent="." instance=ExtResource("3_e6vtr")]
+position = Vector2(-493, -202)
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(-241, 78)
+texture = ExtResource("5_5dtl4")
+
+[node name="DoorClosedHighlightsLeft" type="Sprite2D" parent="."]
+position = Vector2(5, 77)
+texture = ExtResource("6_q6okc")

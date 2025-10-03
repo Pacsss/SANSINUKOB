@@ -1,25 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://styly06aydb8"]
+[gd_scene load_steps=4 format=3 uid="uid://7xgvn2tqadep"]
 
 [ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="2_48lv4"]
 [ext_resource type="PackedScene" uid="uid://7tvdxo83iuc7" path="res://scenes/world/worldTiles.tscn" id="3_nexl8"]
 [ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="3_qc0hx"]
 
-[node name="World" type="Node2D"]
-position = Vector2(-82, 19)
+[node name="Screen" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_48lv4")]
-position = Vector2(81, 207)
+[node name="Tiles" parent="." instance=ExtResource("3_nexl8")]
+position = Vector2(0, 179)
 
-[node name="UI" parent="CharacterBody2D" instance=ExtResource("3_qc0hx")]
+[node name="CharacterBody2D" parent="Tiles" instance=ExtResource("2_48lv4")]
+position = Vector2(587, 352)
+
+[node name="UI" parent="Tiles/CharacterBody2D" instance=ExtResource("3_qc0hx")]
 offset_left = 220.0
 offset_top = -62.0
 offset_right = 220.0
 offset_bottom = -62.0
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Tiles/CharacterBody2D"]
 position = Vector2(-3, 8)
-offset = Vector2(0, -145)
+offset = Vector2(0, -120)
 zoom = Vector2(2, 2)
-
-[node name="Tiles" parent="." instance=ExtResource("3_nexl8")]
-position = Vector2(-511, -141)

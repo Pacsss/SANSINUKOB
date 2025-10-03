@@ -1,0 +1,92 @@
+[gd_scene load_steps=16 format=3 uid="uid://dxgm0xnmu8flw"]
+
+[ext_resource type="Texture2D" uid="uid://dxkl5vtxyedde" path="res://assets/sprites/facilities/Floor.png" id="1_4nui8"]
+[ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="2_utka5"]
+[ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="3_c3dmi"]
+[ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="4_oj02r"]
+[ext_resource type="Texture2D" uid="uid://bfcp2b7o8s7o8" path="res://assets/sprites/facilities/entrance/FOUR_DOORS.png.webp" id="5_utka5"]
+[ext_resource type="Texture2D" uid="uid://c2pdk0yybdfeb" path="res://assets/sprites/facilities/entrance/interactables/Door_Food.png.webp" id="6_6bn1c"]
+[ext_resource type="Texture2D" uid="uid://d020ffsstp0lt" path="res://assets/sprites/facilities/entrance/interactables/Door_Locker.png.webp" id="7_ysrik"]
+[ext_resource type="Texture2D" uid="uid://5gg0q344l233" path="res://assets/sprites/facilities/entrance/interactables/Door_Lab.png.webp" id="8_wgt3o"]
+[ext_resource type="Texture2D" uid="uid://bdkvv61v5tmkg" path="res://assets/sprites/facilities/entrance/interactables/Door_Control_Room.png.webp" id="9_vi6aa"]
+[ext_resource type="Texture2D" uid="uid://crixxk7xtyjjt" path="res://assets/sprites/facilities/entrance/interactables/highlights/Control_Door_Highlight.png.webp" id="10_bwsff"]
+[ext_resource type="Texture2D" uid="uid://cjxcghptlu4u4" path="res://assets/sprites/facilities/entrance/interactables/highlights/Door_Food_HIghlight.png.webp" id="11_bo4yk"]
+[ext_resource type="Texture2D" uid="uid://jmpv6gx4c3ff" path="res://assets/sprites/facilities/entrance/interactables/highlights/Door_Locker_HIghlight.png.webp" id="12_dtsrh"]
+[ext_resource type="Texture2D" uid="uid://v16cngqtpok8" path="res://assets/sprites/facilities/entrance/interactables/highlights/Lab_Door_HIghlight.png.webp" id="13_tc22y"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_066d0"]
+texture = ExtResource("1_4nui8")
+
+[sub_resource type="TileSet" id="TileSet_g3wbr"]
+sources/0 = SubResource("TileSetAtlasSource_066d0")
+
+[node name="Entrance" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+show_behind_parent = true
+tile_set = SubResource("TileSet_g3wbr")
+format = 2
+
+[node name="Tiles" parent="." instance=ExtResource("2_utka5")]
+show_behind_parent = true
+position = Vector2(-81, -5)
+
+[node name="FourDoors_png" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("5_utka5")
+metadata/_edit_lock_ = true
+
+[node name="DoorFood_png" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("6_6bn1c")
+metadata/_edit_lock_ = true
+
+[node name="DoorLocker_png" type="Sprite2D" parent="."]
+position = Vector2(563, 275)
+texture = ExtResource("7_ysrik")
+metadata/_edit_lock_ = true
+
+[node name="DoorLab_png" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("8_wgt3o")
+metadata/_edit_lock_ = true
+
+[node name="DoorControlRoom_png" type="Sprite2D" parent="."]
+position = Vector2(563, 275)
+texture = ExtResource("9_vi6aa")
+metadata/_edit_lock_ = true
+
+[node name="ControlDoorHighlight_png" type="Sprite2D" parent="."]
+position = Vector2(563, 275)
+texture = ExtResource("10_bwsff")
+metadata/_edit_lock_ = true
+
+[node name="DoorFoodHIghlight_png" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("11_bo4yk")
+metadata/_edit_lock_ = true
+
+[node name="DoorLockerHIghlight_png" type="Sprite2D" parent="."]
+position = Vector2(563, 275)
+texture = ExtResource("12_dtsrh")
+metadata/_edit_lock_ = true
+
+[node name="LabDoorHIghlight_png" type="Sprite2D" parent="."]
+position = Vector2(562, 275)
+texture = ExtResource("13_tc22y")
+metadata/_edit_lock_ = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_c3dmi")]
+position = Vector2(572, 399)
+metadata/_edit_lock_ = true
+
+[node name="UI" parent="CharacterBody2D" instance=ExtResource("4_oj02r")]
+offset_left = 220.0
+offset_top = -62.0
+offset_right = 220.0
+offset_bottom = -62.0
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-3, 8)
+offset = Vector2(0, -120)
+zoom = Vector2(2, 2)
