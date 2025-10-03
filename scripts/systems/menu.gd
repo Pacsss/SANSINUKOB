@@ -1,4 +1,5 @@
-extends Control
+extends CanvasLayer
+
 @onready var helmet: TouchScreenButton = $helmet/helmet
 @onready var folder: TouchScreenButton = $folder/folder
 @onready var book: TouchScreenButton = $book/book
@@ -18,7 +19,7 @@ func _on_helmet_pressed() -> void:
 
 func _on_helmet_released() -> void:
 	helmet.modulate.a = 1.0
-
+	
 
 func _on_folder_pressed() -> void:
 	close_all_menus()

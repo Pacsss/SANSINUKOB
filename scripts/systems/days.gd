@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 @onready var sol_label: Label = $DayPanel/MarginContainer/SolLabel
 @onready var time_label: Label = $TimePanel/MarginContainer/TimeLabel

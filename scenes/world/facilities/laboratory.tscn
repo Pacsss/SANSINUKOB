@@ -1,22 +1,180 @@
-[gd_scene load_steps=5 format=3 uid="uid://oaljilukwhtg"]
+[gd_scene load_steps=9 format=3 uid="uid://oaljilukwhtg"]
 
 [ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="1_14qbo"]
 [ext_resource type="Texture2D" uid="uid://cbxi3kk6vgffq" path="res://assets/sprites/facilities/laboratory/Laboratory_Background.png" id="1_dy64v"]
 [ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="2_e6vtr"]
 [ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="3_e6vtr"]
+[ext_resource type="Texture2D" uid="uid://3a3pmaacgf2t" path="res://assets/sprites/world/block.png" id="5_vrle1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dtl4"]
+size = Vector2(0, 138)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vrle1"]
+texture = ExtResource("5_vrle1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_66gww"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_vrle1")
 
 [node name="Laboratory" type="Node2D"]
 
-[node name="LaboratoryBackground" type="Sprite2D" parent="."]
+[node name="Laboratory" type="Area2D" parent="."]
+
+[node name="LaboratoryBackground" type="Sprite2D" parent="Laboratory"]
 position = Vector2(5, 76)
 texture = ExtResource("1_dy64v")
 
-[node name="Tiles" parent="." instance=ExtResource("3_e6vtr")]
-position = Vector2(-493, -202)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Laboratory"]
+position = Vector2(325, 139)
+shape = SubResource("RectangleShape2D_5dtl4")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_14qbo")]
-visible = false
-position = Vector2(0, 207)
+position = Vector2(4, 202)
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("2_e6vtr")]
 offset_left = 220.0
@@ -25,6 +183,21 @@ offset_right = 220.0
 offset_bottom = -62.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(-3, 8)
+position = Vector2(0, -8)
 offset = Vector2(0, -140)
 zoom = Vector2(2, 2)
+limit_left = -315
+limit_top = 54
+limit_right = 325
+limit_bottom = 364
+limit_smoothed = true
+
+[node name="Tiles" parent="." instance=ExtResource("3_e6vtr")]
+position = Vector2(-312, -204)
+script = null
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource("TileSet_66gww")
+format = 2
+layer_0/tile_data = PackedInt32Array(851949, 786432, 1, 786413, 786432, 1, 720877, 786432, 1, 655341, 786432, 1, 589805, 786432, 1, 524269, 786432, 1, 458733, 786432, 1, 393197, 786432, 1, 327661, 786432, 1, 262125, 786432, 1, 196589, 786432, 1, 131053, 786432, 1, 65517, 786432, 1, -19, 786432, 1, -65555, 786432, 1, -131091, 786432, 1, -196627, 786432, 1, -262163, 786432, 1, -327699, 786432, 1, -327698, 786432, 1, -327697, 786432, 1, -327696, 786432, 1, -327695, 786432, 1, -327694, 786432, 1, -327693, 786432, 1, -327692, 786432, 1, -327691, 786432, 1, -327690, 786432, 1, -327689, 786432, 1, -327688, 786432, 1, -327687, 786432, 1, -327686, 786432, 1, -327685, 786432, 1, -327684, 786432, 1, -327683, 786432, 1, -327682, 786432, 1, -327681, 786432, 1, -393216, 786432, 1, -393215, 786432, 1, -393214, 786432, 1, -393213, 786432, 1, -393212, 786432, 1, -393211, 786432, 1, -393210, 786432, 1, -393209, 786432, 1, -393208, 786432, 1, -393207, 786432, 1, -393206, 786432, 1, -393205, 786432, 1, -393204, 786432, 1, -393203, 786432, 1, -393202, 786432, 1, -393201, 786432, 1, -393200, 786432, 1, -393199, 786432, 1, -393198, 786432, 1, -393197, 786432, 1, -393196, 786432, 1, -327660, 786432, 1, -262124, 786432, 1, -196588, 786432, 1, -131052, 786432, 1, -65516, 786432, 1, 20, 786432, 1, 65556, 786432, 1, 131092, 786432, 1, 196628, 786432, 1, 262164, 786432, 1, 327700, 786432, 1, 393236, 786432, 1, 458772, 786432, 1, 524308, 786432, 1, 589844, 786432, 1, 655380, 786432, 1, 720916, 786432, 1, 786452, 786432, 1)

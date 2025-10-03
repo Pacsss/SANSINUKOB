@@ -6,24 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://dsedssodvhos7" path="res://assets/sprites/UI/image.png" id="4_1m7gk"]
 [ext_resource type="Texture2D" uid="uid://rtxb8xw1awvp" path="res://assets/sprites/UI/o2.png" id="5_ntac7"]
 
-[node name="Status" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 474.0
-offset_top = 149.0
-offset_right = -506.0
-offset_bottom = -318.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Status" type="CanvasLayer"]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
 
 [node name="healthStatus" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 105.0
-offset_top = 46.0
-offset_right = 132.0
-offset_bottom = 73.0
+offset_left = 724.0
+offset_top = 2.0
+offset_right = 751.0
+offset_bottom = 29.0
+scale = Vector2(1.5, 1.5)
 
 [node name="Health" type="Sprite2D" parent="healthStatus"]
 position = Vector2(13.5, 13.5)
@@ -31,11 +23,11 @@ scale = Vector2(0.35937512, 0.3593752)
 texture = ExtResource("1_dguob")
 
 [node name="hungerStatus" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 105.0
-offset_top = 75.0
-offset_right = 132.0
-offset_bottom = 102.0
+offset_left = 724.0
+offset_top = 45.858
+offset_right = 751.0
+offset_bottom = 72.85795
+scale = Vector2(1.5, 1.5)
 
 [node name="Hunger" type="Sprite2D" parent="hungerStatus"]
 position = Vector2(13, 13)
@@ -43,11 +35,11 @@ scale = Vector2(0.31249958, 0.31250003)
 texture = ExtResource("2_1m7gk")
 
 [node name="thirstStatus" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 105.0
-offset_top = 104.0
-offset_right = 132.0
-offset_bottom = 131.0
+offset_left = 724.0
+offset_top = 89.99
+offset_right = 751.0
+offset_bottom = 116.98976
+scale = Vector2(1.5, 1.5)
 
 [node name="Thirst" type="Sprite2D" parent="thirstStatus"]
 position = Vector2(14.708008, 13.799988)
@@ -55,11 +47,11 @@ scale = Vector2(0.384125, 0.35)
 texture = ExtResource("3_ntac7")
 
 [node name="staminaStatus" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 76.0
-offset_top = 46.0
-offset_right = 103.0
-offset_bottom = 73.0
+offset_left = 680.0
+offset_top = 2.0
+offset_right = 707.0
+offset_bottom = 29.0
+scale = Vector2(1.5, 1.5)
 
 [node name="Stamina" type="Sprite2D" parent="staminaStatus"]
 position = Vector2(13.625, 14.125)
@@ -67,11 +59,11 @@ scale = Vector2(0.2884612, 0.34230775)
 texture = ExtResource("4_1m7gk")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 47.0
-offset_top = 46.0
-offset_right = 74.0
-offset_bottom = 73.0
+offset_left = 635.3333
+offset_top = 2.0
+offset_right = 662.3333
+offset_bottom = 29.0
+scale = Vector2(1.5, 1.5)
 
 [node name="O2" type="Sprite2D" parent="Panel"]
 position = Vector2(13.499994, 13.25)
