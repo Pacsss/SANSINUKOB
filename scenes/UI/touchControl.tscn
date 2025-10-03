@@ -11,14 +11,14 @@
 script = ExtResource("1_v0uy3")
 
 [node name="Left" type="TouchScreenButton" parent="."]
-position = Vector2(48.999954, 519.99994)
+position = Vector2(84, 517.99994)
 scale = Vector2(2.507, 2.1)
 texture_normal = ExtResource("1_mwg33")
 action = "left"
 script = SubResource("GDScript_hy4f4")
 
 [node name="Right" type="TouchScreenButton" parent="."]
-position = Vector2(280, 520)
+position = Vector2(185, 518.00006)
 scale = Vector2(2.562, 2.1)
 texture_normal = ExtResource("2_hy4f4")
 action = "right"

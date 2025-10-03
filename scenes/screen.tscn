@@ -8,7 +8,7 @@
 position = Vector2(-82, 19)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_48lv4")]
-position = Vector2(82, 185)
+position = Vector2(81, 207)
 
 [node name="UI" parent="CharacterBody2D" instance=ExtResource("3_qc0hx")]
 offset_left = 220.0

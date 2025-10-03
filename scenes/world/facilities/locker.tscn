@@ -1,15 +1,61 @@
-[gd_scene load_steps=5 format=3 uid="uid://c73qwsh5rvhdb"]
+[gd_scene load_steps=16 format=3 uid="uid://c73qwsh5rvhdb"]
 
 [ext_resource type="PackedScene" uid="uid://c55dlvrvw8av6" path="res://scenes/world/facilityTiles.tscn" id="1_7ucne"]
 [ext_resource type="Texture2D" uid="uid://btawr2n3urbi0" path="res://assets/sprites/facilities/locker/Locker_Background.png" id="1_fnhfb"]
+[ext_resource type="Texture2D" uid="uid://4qsjlrmsqsit" path="res://assets/sprites/facilities/locker/interactables/Clothes.png" id="2_r24ai"]
 [ext_resource type="PackedScene" uid="uid://c7vc4u3wskn4l" path="res://scenes/characters/player.tscn" id="2_yjnmk"]
+[ext_resource type="Texture2D" uid="uid://dg0gbyvdjm7vh" path="res://assets/sprites/facilities/locker/interactables/Door.png" id="3_gmx48"]
 [ext_resource type="PackedScene" uid="uid://5gyxx7mjdyua" path="res://scenes/UI/inGameUI.tscn" id="4_gvah2"]
+[ext_resource type="Texture2D" uid="uid://fw04vgjrhgub" path="res://assets/sprites/facilities/locker/interactables/Food_and_Drink.png" id="4_x035t"]
+[ext_resource type="Texture2D" uid="uid://426h4uqiprfl" path="res://assets/sprites/facilities/locker/interactables/Suit.png" id="5_odymw"]
+[ext_resource type="Texture2D" uid="uid://gtwehbqeybry" path="res://assets/sprites/facilities/locker/interactables/highlights/Clothes_Highlight.png" id="6_ufgn7"]
+[ext_resource type="Texture2D" uid="uid://b72ovy5bvru0y" path="res://assets/sprites/facilities/locker/interactables/highlights/Door_Closed_Highlights_Left.png" id="7_rv3eo"]
+[ext_resource type="Texture2D" uid="uid://dqpojuihsigin" path="res://assets/sprites/facilities/locker/interactables/highlights/Food_and_Drink_Higlight.png" id="8_fx4vv"]
+[ext_resource type="Texture2D" uid="uid://be4iqd56wp0um" path="res://assets/sprites/facilities/locker/interactables/highlights/Food_dispenser_Highlight.png" id="9_hlvv4"]
+[ext_resource type="Texture2D" uid="uid://cld1m3omf5ova" path="res://assets/sprites/facilities/locker/interactables/highlights/Locker_with_clothes_highlights.png" id="10_odwpa"]
+[ext_resource type="Texture2D" uid="uid://cu1u5scn0xfw2" path="res://assets/sprites/facilities/locker/interactables/highlights/Locker_with_Suit_Highligth.png" id="11_0hx7k"]
+[ext_resource type="Texture2D" uid="uid://2snekav3b5rk" path="res://assets/sprites/facilities/locker/interactables/highlights/Suit_Highlight.png" id="12_88toq"]
 
 [node name="Locker" type="Node2D"]
 
 [node name="LockerBackground" type="Sprite2D" parent="."]
 position = Vector2(562, 275)
 texture = ExtResource("1_fnhfb")
+
+[node name="Clothes" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("2_r24ai")
+
+[node name="Door" type="Sprite2D" parent="LockerBackground"]
+position = Vector2(0, 1)
+texture = ExtResource("3_gmx48")
+
+[node name="FoodAndDrink" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("4_x035t")
+
+[node name="Suit" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("5_odymw")
+
+[node name="ClothesHighlight" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("6_ufgn7")
+
+[node name="DoorClosedHighlightsLeft" type="Sprite2D" parent="LockerBackground"]
+position = Vector2(0, 1)
+texture = ExtResource("7_rv3eo")
+
+[node name="FoodAndDrinkHiglight" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("8_fx4vv")
+
+[node name="FoodDispenserHighlight" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("9_hlvv4")
+
+[node name="LockerWithClothesHighlights" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("10_odwpa")
+
+[node name="LockerWithSuitHighligth" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("11_0hx7k")
+
+[node name="SuitHighlight" type="Sprite2D" parent="LockerBackground"]
+texture = ExtResource("12_88toq")
 
 [node name="Tiles" parent="." instance=ExtResource("1_7ucne")]
 position = Vector2(-45, -3)
